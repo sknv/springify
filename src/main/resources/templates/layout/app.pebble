@@ -1,9 +1,14 @@
 <!doctype html>
 <html lang="">
 <head>
+  {% include "shared/_head" %}
   <title>Springify | {% block title %}{% endblock %}</title>
+  {% block head %}{% endblock %}
 </head>
 <body>
 {% block content %}{% endblock %}
+
+{% include "shared/_scripts" %}
+{% block scripts %}{% endblock %}
 </body>
 </html>
