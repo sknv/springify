@@ -1,9 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Springify | Hello</title>
-  </head>
-  <body>
-    <h1>Hello from {{ name }}</h1>
-  </body>
-</html>
+{% extends "layout/app" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+  <h1>Hello from {{ name }}</h1>
+{% endblock %}
