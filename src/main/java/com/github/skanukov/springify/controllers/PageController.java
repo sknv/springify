@@ -1,6 +1,7 @@
 package com.github.skanukov.springify.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
 
     @GetMapping("/")
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("name", "Springify");
         return "index";
     }
 }
