@@ -12,6 +12,6 @@ public class PageController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("name", "Springify");
-        return "index";
+        return "page/index";
     }
 }
