@@ -1,6 +1,7 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.3.RELEASE'
+		springBootVersion = '1.5.2.RELEASE'
+		pebbleBootStarterVersion = '2.3.0'
 	}
 	repositories {
 		mavenCentral()
@@ -26,10 +27,9 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-    compile('com.mitchellbosecke:pebble-spring-boot-starter:2.3.0')
+    compile("com.mitchellbosecke:pebble-spring-boot-starter:${pebbleBootStarterVersion}")
 
     runtime('org.springframework.boot:spring-boot-devtools')
 
