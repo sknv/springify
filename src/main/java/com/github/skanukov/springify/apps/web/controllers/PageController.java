@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.controllers;
+package com.github.skanukov.springify.apps.web.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

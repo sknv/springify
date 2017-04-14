@@ -1,6 +1,6 @@
-package com.github.skanukov.springify.controllers;
+package com.github.skanukov.springify.apps.api.controllers;
 
-import com.github.skanukov.springify.models.Greeting;
+import com.github.skanukov.springify.lib.models.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
+
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/greet")

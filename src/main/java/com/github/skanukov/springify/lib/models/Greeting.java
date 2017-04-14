@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.models;
+package com.github.skanukov.springify.lib.models;
 
 public class Greeting {
 
