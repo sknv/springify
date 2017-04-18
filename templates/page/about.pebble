@@ -1,0 +1,7 @@
+{% extends "layout/app" %}
+
+{% block title %}О сайте{% endblock %}
+
+{% block content %}
+  <h1>About page</h1>
+{% endblock %}

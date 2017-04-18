@@ -21,4 +21,11 @@ public class PageController {
         model.addAttribute("name", "Springify");
         return "page/index";
     }
+
+    @GetMapping("/about")
+    public String about(Model model) {
+        logger.info("About page requested");
+
+        return "page/about";
+    }
 }
