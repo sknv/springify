@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.web.config;
+package com.github.skanukov.springify.apps.web.config.router;
 
 public class WebRouterConfig {
 

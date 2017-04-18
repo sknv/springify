@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.api.config;
+package com.github.skanukov.springify.apps.api.config.router;
 
 public class ApiRouterConfig {
 

@@ -1,6 +1,6 @@
 package com.github.skanukov.springify.apps.web.controllers;
 
-import com.github.skanukov.springify.apps.web.config.WebRouterConfig;
+import com.github.skanukov.springify.apps.web.config.router.WebRouterConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
