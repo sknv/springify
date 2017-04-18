@@ -1,0 +1,29 @@
+{% extends "layout/app" %}
+
+{% block title %}Вход в систему{% endblock %}
+
+{% block content %}
+<form action="/login" method="post">
+  <input type="hidden" name="{{ request.getAttribute("_csrf").getParameterName() }}"
+         value="{{ request.getAttribute("_csrf").getToken() }}">
+
+  {% if error is not empty %}
+    {{ error }}
+  {% endif %}
+
+  {% if logout is not empty %}
+    {{ logout }}
+  {% endif %}
+
+  <label for="username"></label>
+  <input id="username" name="username" type="text" placeholder="Username" autofocus>
+
+  <label for="password"></label>
+  <input id="password" name="password" type="password" placeholder="Password">
+
+  <label for="remember-me">Remember me</label>
+  <input id="remember-me" name="remember-me" type="checkbox">
+
+  <button type="submit">Log in</button>
+</form>
+{% endblock %}

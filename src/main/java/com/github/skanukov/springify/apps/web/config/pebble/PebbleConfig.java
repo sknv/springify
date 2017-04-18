@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.web.config;
+package com.github.skanukov.springify.apps.web.config.pebble;
 
 import com.mitchellbosecke.pebble.loader.FileLoader;
 import com.mitchellbosecke.pebble.loader.Loader;
