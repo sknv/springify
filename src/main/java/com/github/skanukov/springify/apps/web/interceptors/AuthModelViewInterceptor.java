@@ -30,6 +30,6 @@ public class AuthModelViewInterceptor extends HandlerInterceptorAdapter {
             authViewModel.user = authFacade.getAuthentication();
         }
 
-        modelAndView.addObject("auth", authViewModel);
+        request.setAttribute("auth", authViewModel);
     }
 }

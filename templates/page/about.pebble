@@ -5,7 +5,7 @@
 {% block content %}
 <h1>About page</h1>
 
-{% if auth.isSignedIn %}
-  <h2>Hello, {{ auth.user.getName() }}</h2>
+{% if request.getAttribute("auth").isSignedIn %}
+  <h2>Hello, {{ request.getAttribute("auth").user.getName() }}</h2>
 {% endif %}
 {% endblock %}
