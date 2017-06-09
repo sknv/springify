@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.web.facades;
+package com.github.skanukov.springify.apps.core.facades;
 
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

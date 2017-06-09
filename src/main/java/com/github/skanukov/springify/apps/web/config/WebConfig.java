@@ -1,6 +1,6 @@
 package com.github.skanukov.springify.apps.web.config;
 
-import com.github.skanukov.springify.apps.web.interceptors.AuthModelViewInterceptor;
+import com.github.skanukov.springify.apps.core.interceptors.AuthModelViewInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
