@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '1.5.4.RELEASE'
-        pebbleBootStarterVersion = '2.3.0'
+        pebbleBootStarterVersion = '2.4.0'
     }
     repositories {
         mavenCentral()
