@@ -1,7 +1,7 @@
-package com.github.skanukov.springify.core.interceptors;
+package com.github.skanukov.springify.apps.web.interceptors;
 
 import com.github.skanukov.springify.core.facades.AuthFacade;
-import com.github.skanukov.springify.core.viewmodels.AuthViewModel;
+import com.github.skanukov.springify.apps.web.viewmodels.AuthViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;

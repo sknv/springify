@@ -17,8 +17,8 @@ import java.util.concurrent.atomic.AtomicLong;
 @RequestMapping(ApiRouterConfig.API_BASE_URI + "/greeting")
 public class GreetingController {
 
-    private static final String template = "Hello, %s!";
     private static final Logger logger = LoggerFactory.getLogger(GreetingController.class);
+    private static final String template = "Hello, %s!";
 
     private final AtomicLong counter = new AtomicLong();
     private final AuthFacade authFacade;

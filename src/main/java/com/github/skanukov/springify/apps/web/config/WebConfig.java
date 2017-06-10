@@ -1,6 +1,7 @@
 package com.github.skanukov.springify.apps.web.config;
 
-import com.github.skanukov.springify.core.interceptors.AuthModelViewInterceptor;
+import com.github.skanukov.springify.apps.api.config.router.ApiRouterConfig;
+import com.github.skanukov.springify.apps.web.interceptors.AuthModelViewInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -18,6 +19,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authModelViewInterceptor);
+        // Do not intercept api requests.
+        registry.addInterceptor(authModelViewInterceptor)
+                .excludePathPatterns(ApiRouterConfig.API_URI_PATTERN);
     }
 }
