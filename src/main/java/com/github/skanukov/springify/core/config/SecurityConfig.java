@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.core.config;
+package com.github.skanukov.springify.core.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -14,24 +14,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests()
+            .authorizeRequests()
                 .antMatchers("/", "/assets/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin()
+            .formLogin()
                 .loginPage("/login")
                 .permitAll()
                 .and()
-                .logout()
+            .logout()
                 .permitAll()
                 .and()
-                .rememberMe();
+            .rememberMe();
     }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .inMemoryAuthentication()
+            .inMemoryAuthentication()
                 .withUser("user")
                 .password("password")
                 .roles("USER");

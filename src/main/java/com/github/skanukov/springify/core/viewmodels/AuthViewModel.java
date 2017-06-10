@@ -1,4 +1,4 @@
-package com.github.skanukov.springify.apps.core.viewmodels;
+package com.github.skanukov.springify.core.viewmodels;
 
 import org.springframework.security.core.Authentication;
 
